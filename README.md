@@ -7,3 +7,7 @@ To learn more, visit [bulk-sms.io](https://bulk-sms.io/)
 ## Documentation
 
 Documentation can be found online at <https://bulk-sms.io/api-documentation>. The documentation covers details of API usageand extensive usage examples.
+
+## License
+
+MIT
