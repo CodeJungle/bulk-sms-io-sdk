@@ -10,8 +10,7 @@
 class bulkSms
 {
 
-	//        static $baseUrl = "https://bulk-sms.io";
-	static $baseUrl = "http://localhost/sms";
+	static $baseUrl = "https://bulk-sms.io";
 	function __construct($token)
 	{
 		$this->token = $token;
