@@ -107,7 +107,7 @@ class bulkSms
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		$result = curl_exec($ch);
 		$return['response'] = json_decode($result, true);
-		$return['status'] = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		$return['code'] = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close($ch);
 		return $return;
 	}
