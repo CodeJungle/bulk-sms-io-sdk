@@ -95,7 +95,7 @@ class bulkSms
 			'Accept: application/json',
 			'Content-Type: application/json'
 		);
-		$fields['token'] = $this->token;
+		$data['token'] = $this->token;
 		$url = bulkSms::$baseUrl . $url;
 		$json_data = json_encode($data);
 		$ch = curl_init();
