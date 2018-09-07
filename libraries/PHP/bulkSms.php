@@ -51,9 +51,10 @@ class bulkSms
 	 * MESSAGES API
 	 *
 	 */
-	function getMessages($page = 1)
+	function getMessages($page = 1, $options = [])
 	{
-		return $this->makeRequest('/api/messages', 'GET', ['page' => $page]);
+        $query = array_merge(['page' => $page], $options);
+		return $this->makeRequest('/api/messages', 'GET', $query);
 	}
 
 	function getMessage($id)
